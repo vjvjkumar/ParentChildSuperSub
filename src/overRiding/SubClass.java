@@ -1,6 +1,8 @@
 package overRiding;
 
-import org.junit.Test;
+import org.testng.annotations.Test;
+
+
 
 public class SubClass extends SuperClass{
 	
