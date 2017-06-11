@@ -12,6 +12,7 @@ public class Parent_multipleBrowsers {
 	public void startBrowser(String browserName, String url) throws InterruptedException {
 		
 		if (browserName.equalsIgnoreCase("firefox")){
+		System.setProperty("webdriver.gecko.driver","V:\\seleniumJars\\geckodriver.exe");
 		driver = new FirefoxDriver();
 		}
 		else if (browserName.equalsIgnoreCase("Chrome")){

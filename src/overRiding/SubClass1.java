@@ -22,6 +22,7 @@ public class SubClass1 implements SuperClass1{
 	
 	public void Firefox() 
 	{
+		System.setProperty("webdriver.gecko.driver","V:\\seleniumJars\\geckodriver.exe");
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get("http://amazon.co.uk/");

@@ -19,7 +19,8 @@ public class SuperClass {
 	
 	public void Firefox()
 	{
-		WebDriver driver = new FirefoxDriver();
+		System.setProperty("webdriver.gecko.driver","V:\\seleniumJars\\geckodriver.exe");
+		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get("http://facebook.com/");
 	}
@@ -27,7 +28,7 @@ public class SuperClass {
 	public void IE()
 	{
 		System.setProperty("webdriver.ie.driver", "V:\\SeleniumJars\\IEDriverServer.exe");
-		WebDriver driver = new InternetExplorerDriver();
+		driver = new InternetExplorerDriver();
 		driver.manage().window().maximize();
 		driver.get("http://facebook.com/");
 	}
